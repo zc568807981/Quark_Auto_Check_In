@@ -51,7 +51,7 @@ jobs:
           echo "随机延迟 ${delay} 秒后开始执行。"
           sleep "$delay"
 
-      - name: 设置 Python 环境
+      - name: 设置 Python 环 境
         if: steps.cache-success.outputs.cache-hit != 'true'
         uses: actions/setup-python@v7
         with:
